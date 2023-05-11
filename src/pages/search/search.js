@@ -53,7 +53,7 @@ const Search = (props) => {
           </span>
         </div>
 
-        {/* <div className="search_list">
+        <div className="search_list">
           <List object={props.object} tab={tab} />
           <div className="search_button_list">
             <button
@@ -81,7 +81,7 @@ const Search = (props) => {
               page 3
             </button>
           </div>
-        </div> */}
+        </div>
       </div>
     </div>
   );

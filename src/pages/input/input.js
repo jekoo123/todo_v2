@@ -65,10 +65,10 @@ function Input({ object, setObject }) {
     button_clicked = true;
   };
   return (
-    <>
+    <div className="input_real_container">
       <div className="input_container">
         <div className="input">
-          <div className="label">날짜 선택</div>
+          <div className="label">날짜 선택 &nbsp;:</div>
           <DatePicker
             selected={selectedDate || new Date()}
             onChange={(date) => setSelectedDate(date)}
@@ -78,7 +78,7 @@ function Input({ object, setObject }) {
             placeholderText="Select a date"
             className="custom-placeholder"
           />
-          <div className="label">일정 입력</div>
+          <div className="label">일정 입력 &nbsp;:</div>
           <textarea
             className="content_input"
             ref={txt}
@@ -98,7 +98,6 @@ function Input({ object, setObject }) {
             Clear
           </button>
         </div>
-        
         <List object={object} tab={activeTab} />
       </div>
 
@@ -129,7 +128,7 @@ function Input({ object, setObject }) {
           Page3
         </button>
       </div>
-    </>
+    </div>
   );
 }
 export default Input;
