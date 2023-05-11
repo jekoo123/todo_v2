@@ -1,0 +1,16 @@
+.footer {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  background-color: beige;
+  font-size: 2vw;
+  width: 85vw;
+  color: gray;
+  border: 0.1vw solid black;
+  border-radius: 1vw;
+  position:relative;
+  padding:1.5vw;
+  margin:0vw auto;
+  height:20vw;
+}
+
